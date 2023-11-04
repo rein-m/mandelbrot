@@ -7,7 +7,7 @@ def mandelbrot(c, max_iterations):
     for i in range(max_iterations):
         if abs(z) > 2.0:
             return i
-        z = z * z + c
+        z = z ** 8 + c
     return max_iterations
 
 def create_mandelbrot_set(width, height, real_min, real_max, imag_min, imag_max, max_iterations):
