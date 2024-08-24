@@ -22,7 +22,7 @@ def create_mandelbrot_set(width, height, real_min, real_max, imag_min, imag_max,
 
     return mandelbrot_set
 
-# Set the parameters for the Mandelbrot set
+#set the parameters for the Mandelbrot set
 width = 500
 height = 500
 real_min = -2.0
@@ -31,10 +31,10 @@ imag_min = -1.5
 imag_max = 1.5
 max_iterations = 100
 
-# Create the Mandelbrot set
+#create the Mandelbrot set
 mandelbrot_set = create_mandelbrot_set(width, height, real_min, real_max, imag_min, imag_max, max_iterations)
 
-# Plot the Mandelbrot set in 3D
+#plot the Mandelbrot set in 3D
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 X, Y = np.meshgrid(np.linspace(real_min, real_max, width), np.linspace(imag_min, imag_max, height))
@@ -42,6 +42,3 @@ ax.plot_surface(X, Y, mandelbrot_set, cmap='hot')
 ax.set_xlabel('Real')
 ax.set_ylabel('Imaginary')
 ax.set_zlabel('Iterations')
-
-# Show the plot
-plt.show()
