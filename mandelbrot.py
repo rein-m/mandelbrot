@@ -42,3 +42,5 @@ ax.plot_surface(X, Y, mandelbrot_set, cmap='hot')
 ax.set_xlabel('Real')
 ax.set_ylabel('Imaginary')
 ax.set_zlabel('Iterations')
+
+plt.show()
